@@ -1,0 +1,43 @@
+.main_content {
+  display: grid;
+  grid-template-areas: "head head head" "side content content" "foot foot foot";
+}
+.header {
+  background: #d85353;
+  padding: 5px 10px;
+  grid-area: head;
+  margin: 5px;
+}
+.article {
+  background: #25e014;
+  padding: 5px 10px;
+  grid-area: content;
+  margin: 5px;
+}
+.sidebar {
+  background: #3a5fdb;
+  padding: 5px 10px;
+  grid-area: side;
+  margin: 5px;
+}
+.footer {
+  background: #a40cd3;
+  padding: 5px 10px;
+  grid-area: foot;
+  margin: 5px;
+}
+
+.grid_content {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 10px;
+}
+.content1,
+.content2,
+.content3,
+.content4 {
+  padding: 10px;
+  border: 1px solid gray;
+  margin: 5px;
+}
