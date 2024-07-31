@@ -1,14 +1,16 @@
-import React from 'react'
-import RespnsivePage from './views/ResponsivePage/RespnsivePage'
-import GridPage from './views/GridPage/GridPage'
-import GridBoxItem from './views/GridPage/Responsive'
+import React from "react";
+import "./App.css";
+import StyleGuide from "./views/StyleGuide/StyleGuide";
 
+import ShadowBox from "./components/ShadowBox/ShadowBox";
 const App = () => {
   return (
-    <div>
-      <GridBoxItem/>
+    <div className="container">
+      <ShadowBox sx={{width:"90%", mt:2, display:"flex", justifyContent:"center"}}>
+        <StyleGuide />
+      </ShadowBox>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
